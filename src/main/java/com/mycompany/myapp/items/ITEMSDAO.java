@@ -1,6 +1,6 @@
-package com.mycompany.myapp.dao;
+package com.mycompany.myapp.items;
 
-import com.mycompany.myapp.vo.ITEMSVO;
+import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
@@ -14,48 +14,48 @@ import java.util.List;
 @Primary
 @Repository
 public class ITEMSDAO {
-	
-//	Connection conn = null;
-//	PreparedStatement stmt = null;
-//	ResultSet rs = null;
 
 	@Autowired
-	private JdbcTemplate jdbcTemplate;
-
-	public void setTemplate(JdbcTemplate template) {
-		this.jdbcTemplate = template;
-	}
-
-	private final String ITEMS_INSERT = "insert into ITEMS (productName, image, price, discount, quantity, brandName, phoneNum, brandemail, brandAddress, descriptions) values (?,?,?,?,?,?,?,?,?,?)";
+	SqlSession sqlSession;
 
 	//need to implement
-	private final String ITEMS_UPDATE = "update ITEMS set productName=?, image=?, price=?, discount=?, quantity=?, brandName=?, phoneNum=?, brandemail=?, brandAddress=?, descriptions=? where seq=?";
-	private final String ITEMS_DELETE = "delete from ITEMS  where seq=?";
-	private final String ITEMS_GET = "select * from ITEMS  where seq=?";
-	private final String ITEMS_LIST = "select * from ITEMS order by seq desc";
+//	private final String ITEMS_UPDATE = "update ITEMS set productName=?, image=?, price=?, discount=?, quantity=?, brandName=?, phoneNum=?, brandemail=?, brandAddress=?, descriptions=?, regdate=? where seq=?";
+//	private final String ITEMS_DELETE = "delete from ITEMS  where seq=?";
+//	private final String ITEMS_GET = "select * from ITEMS  where seq=?";
+//	private final String ITEMS_LIST = "select * from ITEMS order by seq desc";
 
 	public int insertItems(ITEMSVO vo) {
-		return jdbcTemplate.update(ITEMS_INSERT, new Object[]{vo.getProductName(), vo.getImage(), vo.getPrice(), vo.getDiscount(),vo.getQuantity(),vo.getBrandName(),vo.getPhoneNum(), vo.getBrandemail(),vo.getBrandAddress(), vo.getDescriptions()});
+		int result = sqlSession.insert("Item.insertItem", vo);
+		return result;
+//		return jdbcTemplate.update(ITEMS_INSERT, vo.getProductName(), vo.getImage(), vo.getPrice(), vo.getDiscount(),vo.getQuantity(),vo.getBrandName(),vo.getPhoneNum(), vo.getBrandemail(),vo.getBrandAddress(), vo.getDescriptions(), new Timestamp(System.currentTimeMillis()));
 	}
 
 	// 글 삭제
 	public int deleteItems(int id) {
-		return jdbcTemplate.update(ITEMS_DELETE, new Object[]{id});
-
+		int result = sqlSession.delete("Item.deleteItem", id);
+		return result;
 	}
 
 	public int updateItems(ITEMSVO vo) {
-		return jdbcTemplate.update(ITEMS_UPDATE, new Object[]{vo.getProductName(), vo.getImage(), vo.getPrice(), vo.getDiscount(),vo.getQuantity(),vo.getBrandName(),vo.getPhoneNum(), vo.getBrandemail(),vo.getBrandAddress(), vo.getDescriptions()});
+		int result = sqlSession.update("Item.updateItem", vo);
+		return result;
+//		return jdbcTemplate.update(ITEMS_UPDATE, vo.getProductName(), vo.getImage(), vo.getPrice(), vo.getDiscount(),vo.getQuantity(),vo.getBrandName(),vo.getPhoneNum(), vo.getBrandemail(),vo.getBrandAddress(), vo.getDescriptions(), new Timestamp(System.currentTimeMillis()), vo.getSeq());
 	}	
 	
 	public ITEMSVO getItems(int seq) {
-		return jdbcTemplate.queryForObject(ITEMS_GET, new Object[] {seq}, new BeanPropertyRowMapper<ITEMSVO>(ITEMSVO.class));
+		ITEMSVO one = sqlSession.selectOne("Item.getBoard", seq);
+		return one;
+//		return jdbcTemplate.queryForObject(ITEMS_GET, new Object[] {seq}, new BeanPropertyRowMapper<ITEMSVO>(ITEMSVO.class));
 	}
 
 	// need to implement
 	public List<ITEMSVO> getItemsList(){
-		return jdbcTemplate.query(ITEMS_LIST, new ItemRowMapper());
+		List<ITEMSVO> list = sqlSession.selectList("Item.getItemList");
+		return list;
+//		return jdbcTemplate.query(ITEMS_LIST, new ItemRowMapper());
 	}
+
+
 
 	class ItemRowMapper implements RowMapper<ITEMSVO>{
 

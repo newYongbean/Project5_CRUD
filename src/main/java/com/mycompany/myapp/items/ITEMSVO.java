@@ -1,4 +1,4 @@
-package com.mycompany.myapp.vo;
+package com.mycompany.myapp.items;
 
 import java.util.Date;
 
