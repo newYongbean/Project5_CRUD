@@ -24,11 +24,10 @@ public class LoginController {
             session.removeAttribute("login");
         }
         UserVO loginvo = service.getUser(vo);
-        System.out.println(loginvo.getUsername() + " " + loginvo.getUserid() + " " + loginvo.getPassword());
         if ( loginvo != null ){ // 로그인 성공
             System.out.println("로그인 성공!");
             session.setAttribute("login", loginvo);
-            returnURL = "redirect:/views/list";
+            returnURL = "redirect:/items/list";
         }else { // 로그인 실패
             System.out.println("로그인 실패!");
             returnURL = "redirect:/login/login";

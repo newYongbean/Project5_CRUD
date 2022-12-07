@@ -31,6 +31,10 @@
 		var a = confirm("정말로 삭제하겠습니까?");
 		if(a) location.href='deleteok/' + id;
 	}
+	function logout_ok(){
+		var a = confirm("정말로 로그아웃 하겠습니까?");
+		if(a) location.href='../login/logout';
+	}
 </script>
 </head>
 <body>
@@ -71,5 +75,6 @@
 </c:forEach>
 </table>
 <br/><button type="button" onclick="location.href='add'">새글쓰기</button>
+<br/><button type="button" onclick="location.href='javascript:logout_ok()'">로그아웃</button>
 </body>
 </html>
