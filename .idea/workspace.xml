@@ -9,14 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="275ac0a1-5599-4067-9624-9203e3affb11" name="Changes" comment="login page matched with db">
+    <list default="true" id="275ac0a1-5599-4067-9624-9203e3affb11" name="Changes" comment="done with login page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/myapp/user/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/myapp/user/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/myapp/util/LoginCheckInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/myapp/util/LoginCheckInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/login/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +190,7 @@
       <workItem from="1669967572726" duration="29842000" />
       <workItem from="1670180564514" duration="472000" />
       <workItem from="1670408038348" duration="534000" />
-      <workItem from="1670408832681" duration="16415000" />
+      <workItem from="1670408832681" duration="18305000" />
     </task>
     <task id="LOCAL-00001" summary="myBatis Start">
       <created>1670411852964</created>
@@ -218,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670421710174</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="done with login page">
+      <created>1670429081832</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670429081832</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,6 +242,7 @@
     <MESSAGE value="myBatis Start" />
     <MESSAGE value="login page" />
     <MESSAGE value="login page matched with db" />
-    <option name="LAST_COMMIT_MESSAGE" value="login page matched with db" />
+    <MESSAGE value="done with login page" />
+    <option name="LAST_COMMIT_MESSAGE" value="done with login page" />
   </component>
 </project>
