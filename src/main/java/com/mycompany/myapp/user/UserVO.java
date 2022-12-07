@@ -1,15 +1,16 @@
 package com.mycompany.myapp.user;
 
 public class UserVO {
-    private String userid;
+    private String userId;
     private String password;
+    private String username;
 
     public String getUserid() {
-        return userid;
+        return userId;
     }
 
     public void setUserid(String userid) {
-        this.userid = userid;
+        this.userId = userid;
     }
 
     public String getPassword() {
@@ -27,6 +28,4 @@ public class UserVO {
     public void setUsername(String username) {
         this.username = username;
     }
-
-    private String username;
 }
