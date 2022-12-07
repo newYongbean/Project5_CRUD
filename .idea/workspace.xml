@@ -9,24 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="275ac0a1-5599-4067-9624-9203e3affb11" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/item-mapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="275ac0a1-5599-4067-9624-9203e3affb11" name="Changes" comment="myBatis Start">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/myapp/user/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/myapp/user/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/myapp/user/UserVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/user-mapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/myapp/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/myapp/HomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/myapp/items/ITEMSDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/myapp/items/ITEMSDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/myapp/items/ITEMSVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/myapp/items/ITEMSVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/myapp/items/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/myapp/items/ItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/myapp/items/ItemsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/myapp/items/ItemsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/myapp/items/ItemsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/myapp/items/ItemsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addpostform.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addpostform.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editform.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editform.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/item-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/item-mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/mybatis-config.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +32,8 @@
       <list>
         <option value="spring-beans.schema" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="CSS File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -203,8 +194,16 @@
       <workItem from="1669967572726" duration="29842000" />
       <workItem from="1670180564514" duration="472000" />
       <workItem from="1670408038348" duration="534000" />
-      <workItem from="1670408832681" duration="2292000" />
+      <workItem from="1670408832681" duration="5101000" />
     </task>
+    <task id="LOCAL-00001" summary="myBatis Start">
+      <created>1670411852964</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670411852964</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,5 +222,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="myBatis Start" />
+    <option name="LAST_COMMIT_MESSAGE" value="myBatis Start" />
   </component>
 </project>

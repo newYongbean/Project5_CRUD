@@ -8,7 +8,7 @@
     </insert>
     <update id="updateItem">
         update ITEMS
-        set productName=#{productName}, image=#{image}, price=#{price}, discount=#{discount}, quantity=#{quantity}, brandName=#{brandName}, phoneNum=#{phoneNum}, brandemail=#{brandemail}, brandAddress=#{brandAddress}, descriptions=#{descriptionns}, regdate=#{regdate}
+        set productName=#{productName}, image=#{image}, price=#{price}, discount=#{discount}, quantity=#{quantity}, brandName=#{brandName}, phoneNum=#{phoneNum}, brandemail=#{brandemail}, brandAddress=#{brandAddress}, descriptions=#{descriptions}, regdate=#{regdate}
         where seq=#{seq}
     </update>
     <delete id="deleteItem">

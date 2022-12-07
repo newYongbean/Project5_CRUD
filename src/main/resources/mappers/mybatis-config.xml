@@ -4,6 +4,6 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
     <typeAliases>
-        <typeAlias alias="items" type="com.mycompany.myapp.items.ITEMSVO" />
+        <typeAlias alias="Item" type="com.mycompany.myapp.items.ITEMSVO" />
     </typeAliases>
 </configuration>

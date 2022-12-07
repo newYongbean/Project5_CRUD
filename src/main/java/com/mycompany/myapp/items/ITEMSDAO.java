@@ -43,7 +43,7 @@ public class ITEMSDAO {
 	}	
 	
 	public ITEMSVO getItems(int seq) {
-		ITEMSVO one = sqlSession.selectOne("Item.getBoard", seq);
+		ITEMSVO one = sqlSession.selectOne("Item.getItem", seq);
 		return one;
 //		return jdbcTemplate.queryForObject(ITEMS_GET, new Object[] {seq}, new BeanPropertyRowMapper<ITEMSVO>(ITEMSVO.class));
 	}
