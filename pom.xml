@@ -6,8 +6,8 @@
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
   <properties>
-    <maven.compiler.source>17</maven.compiler.source>
-    <maven.compiler.target>17</maven.compiler.target>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
   <name>Project5_CRUD Maven Webapp</name>
   <url>http://maven.apache.org</url>
@@ -59,6 +59,11 @@
       <artifactId>javax.servlet-api</artifactId>
       <version>4.0.1</version>
       <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>servlets.com</groupId>
+      <artifactId>cos</artifactId>
+      <version>05Nov2002</version>
     </dependency>
   </dependencies>
   <build>

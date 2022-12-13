@@ -43,14 +43,12 @@
 <tr>
 	<th>Id</th>
 	<th>상품명</th>
-	<th>사진</th>
 	<th>가격</th>
 	<th>할인율</th>
 	<th>매수</th>
 	<th>브랜드명</th>
 	<th>번호</th>
 	<th>브랜드 E-mail</th>
-	<th>브랜드 주소</th>
 	<th>상세 내용</th>
 	<th>수정</th>
 	<th>삭제</th>
@@ -59,15 +57,12 @@
 	<tr>
 		<td>${u.getSeq()}</td>
 		<td>${u.getProductName()}</td>
-		<td><c:if test = "${u.getImage() ne ''}"><br />
-			<img src="${pageContext.request.contextPath }/img/${u.getImage()}" class="image" width="250"></c:if></td>
 		<td>${u.getPrice()}</td>
 		<td>${u.getDiscount()}</td>
 		<td>${u.getQuantity()}</td>
 		<td>${u.getBrandName()}</td>
 		<td>${u.getPhoneNum()}</td>
 		<td>${u.getBrandemail()}</td>
-		<td>${u.getBrandAddress()}</td>
 		<td>${u.getDescriptions()}</td>
 		<td><a href="editpost/${u.seq}">글 수정</a></td>
 		<td><a href="javascript:delete_ok('${u.seq}')">글 삭제</a></td>
